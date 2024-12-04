@@ -16,7 +16,8 @@
         ],
         "interests": [
             "automation",
-            "networking"
+            "networking",
+            "healthcare"
         ],
         "description": "The Internet of Things (IoT) in university classes involves using smart devices and interconnected systems to enhance learning. Students develop IoT applications, exploring their potential in fields like engineering, computer science, and healthcare. The curriculum includes practical projects to solve real-world problems, providing hands-on experience and preparing students for tech careers by emphasizing connectivity, data analysis, and smart technology integration.",
         "imageUrl": "assets/90.jpeg"
@@ -204,9 +205,7 @@
             "340"
         ],
         "interests": [
-            "Fault Tolerance",
-            "System Recovery",
-            "Robustness"
+            "circuits"
         ],
         "description": "Electric vehicles in university classes focus on the design, development, and technology behind battery-powered transportation. Students learn about electric drivetrains, battery management systems, and sustainable energy integration, exploring their applications in the automotive industry and beyond. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in electric vehicle engineering by emphasizing innovation, sustainability, and the future of clean transportation.",
         "imageUrl": "assets/90-2.jpeg"
@@ -220,11 +219,7 @@
         "classes": [
             "380"
         ],
-        "interests": [
-            "Fault Tolerance",
-            "System Recovery",
-            "Robustness"
-        ],
+        "interests": [],
         "description": "Secure and digital communications in university classes focus on the principles and technologies that protect and transmit information over digital networks. Students learn about encryption, cryptography, network security, and communication protocols, exploring their applications in areas like cybersecurity, telecommunications, and finance. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in secure communications by emphasizing data protection, privacy, and the development of robust communication systems.",
         "imageUrl": "assets/90-12.jpeg"
     },
@@ -237,9 +232,7 @@
         "companies": [],
         "classes": [],
         "interests": [
-            "Fault Tolerance",
-            "System Recovery",
-            "Robustness"
+            "healthcare"
         ],
         "description": "Biomedical engineering in university classes focuses on applying engineering principles to healthcare and medical technologies. Students learn about medical device design, biomaterials, and tissue engineering, exploring their applications in areas like diagnostics, prosthetics, and rehabilitation. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in biomedical engineering by emphasizing innovation, patient care, and the development of cutting-edge medical solutions.",
         "imageUrl": "assets/90-13.jpeg"
@@ -253,11 +246,7 @@
         "classes": [
             "240"
         ],
-        "interests": [
-            "Fault Tolerance",
-            "System Recovery",
-            "Robustness"
-        ],
+        "interests": [],
         "description": "Aerial robotics in university classes focuses on the design and operation of drones and other flying robots. Students learn about aerodynamics, control systems, and autonomous navigation, exploring their applications in fields like agriculture, surveillance, and disaster response. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in aerial robotics by emphasizing innovation, real-time problem-solving, and the integration of hardware and software for flight control and automation.",
         "imageUrl": "assets/90-14.jpeg"
     },
@@ -272,9 +261,7 @@
             "340"
         ],
         "interests": [
-            "Fault Tolerance",
-            "System Recovery",
-            "Robustness"
+            "circuits"
         ],
         "description": "Circuits in university classes focus on the design and analysis of electrical circuits and systems. Students learn about circuit components, network analysis, and electronic devices, exploring their applications in various fields like consumer electronics, telecommunications, and power systems. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in circuit design and engineering by emphasizing problem-solving, innovation, and the creation of efficient and reliable electronic systems.",
         "imageUrl": "assets/90-15.jpeg"
