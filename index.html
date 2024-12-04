@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECEn Tracks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border: none;
+            background-color: #f8f9fa;
+            color: #002e5d;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Tracks</h1>
+
+        <!-- Filter Section -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <label for="majorFilter" class="form-label">Major</label>
+                <select id="majorFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="electrical">Electrical</option>
+                    <option value="computer">Computer</option>
+                    <option value="cybersecurity">Cybersecurity</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="classFilter" class="form-label">Favorite Classes</label>
+                <select id="classFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="224">ECEn 224</option>
+                    <option value="240">ECEn 240</option>
+                    <option value="320">ECEn 320</option>
+                    <option value="330">ECEn 330</option>
+                    <option value="340">ECEn 340</option>
+                    <option value="380">ECEn 380</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="interestFilter" class="form-label">Interests</label>
+                <select id="interestFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="robotics">Robotics</option>
+                    <option value="circuits">Circuits and Electronics</option>
+                    <option value="networking">Networking</option>
+                    <option value="programming">Programming</option>
+                    <option value="hardware">Hardware</option>
+                    <option value="security">Cybersecurity</option>
+                    <option value="automation">Automation</option>
+                    <option value="design">Design and Prototyping</option>
+                    <option value="systems">Systems Engineering</option>
+                </select>
+            </div>
+
+            <div class="col-md-3">
+                <label for="companyFilter" class="form-label">Company</label>
+                <select id="companyFilter" class="form-select">
+                    <option value="all">All</option>
+                    <option value="amazon">Amazon</option>
+                    <option value="apple">Apple</option>
+                    <option value="boston-dynamics">Boston Dynamics</option>
+                    <option value="google">Google</option>
+                    <option value="ibm">IBM</option>
+                    <option value="intel">Intel</option>
+                    <option value="meta">Meta (Facebook)</option>
+                    <option value="microsoft">Microsoft</option>
+                    <option value="nvidia">NVIDIA</option>
+                    <option value="spacex">SpaceX</option>
+                    <option value="tesla">Tesla</option>
+                </select>
+            </div>
+
+        </div>
+
+        <!-- Track List -->
+        <div class="row" id="trackList">
+            <!-- Tracks will be loaded here -->
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const majorFilter = document.getElementById('majorFilter');
+            const companyFilter = document.getElementById('companyFilter');
+            const classFilter = document.getElementById('classFilter');
+            const interestFilter = document.getElementById('interestFilter');
+            const trackList = document.getElementById('trackList');
+
+            let tracksData = [];
+
+            const fetchTracksData = async () => {
+                try {
+                    const response = await fetch('tracks.json');
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    tracksData = await response.json();
+                    loadTracks();
+                } catch (error) {
+                    console.error('Failed to fetch tracks data:', error);
+                }
+            };
+
+            const loadTracks = () => {
+                trackList.innerHTML = '';
+                tracksData.forEach(track => {
+                    const trackCard = `
+                        <div class="col-md-4 mb-4 track-item" 
+                            data-majors="${track.majors.join(' ')}" 
+                            data-companies="${track.companies.join(' ')}" 
+                            data-classes="${track.classes.join(' ')}" 
+                            data-interests="${track.interests.join(' ')}">
+                            <div class="card h-100">
+                                <img src="${track.imageUrl}" class="card-img-top" alt="${track.title}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${track.title}</h5>
+                                    <p class="card-text">${track.description}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    trackList.insertAdjacentHTML('beforeend', trackCard);
+                });
+                filterTracks();
+            };
+
+            const filterTracks = () => {
+                const major = majorFilter.value;
+                const company = companyFilter.value;
+                const classValue = classFilter.value;
+                const interest = interestFilter.value;
+
+                const trackItems = document.querySelectorAll('.track-item');
+                trackItems.forEach(track => {
+                    const trackMajors = track.getAttribute('data-majors').split(' ');
+                    const trackCompanies = track.getAttribute('data-companies').split(' ');
+                    const trackClasses = track.getAttribute('data-classes').split(' ');
+                    const trackInterests = track.getAttribute('data-interests').split(' ');
+
+                    const majorMatch = major === 'all' || trackMajors.includes(major);
+                    const companyMatch = company === 'all' || trackCompanies.includes(company);
+                    const classMatch = classValue === 'all' || trackClasses.includes(classValue);
+                    const interestMatch = interest === 'all' || trackInterests.includes(interest);
+
+                    if (majorMatch && companyMatch && classMatch && interestMatch) {
+                        track.style.display = 'block';
+                    } else {
+                        track.style.display = 'none';
+                    }
+                });
+            };
+
+            majorFilter.addEventListener('change', filterTracks);
+            companyFilter.addEventListener('change', filterTracks);
+            classFilter.addEventListener('change', filterTracks);
+            interestFilter.addEventListener('change', filterTracks);
+
+            fetchTracksData();
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

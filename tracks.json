@@ -1,0 +1,282 @@
+[
+    {
+        "title": "Internet of Things",
+        "majors": [
+            "computer"
+        ],
+        "companies": [
+            "amazon",
+            "google",
+            "ibm",
+            "intel"
+        ],
+        "classes": [
+            "224",
+            "330"
+        ],
+        "interests": [
+            "automation",
+            "networking"
+        ],
+        "description": "The Internet of Things (IoT) in university classes involves using smart devices and interconnected systems to enhance learning. Students develop IoT applications, exploring their potential in fields like engineering, computer science, and healthcare. The curriculum includes practical projects to solve real-world problems, providing hands-on experience and preparing students for tech careers by emphasizing connectivity, data analysis, and smart technology integration.",
+        "imageUrl": "assets/90.jpeg"
+    },
+    {
+        "title": "Wireless Networking",
+        "majors": [
+            "computer",
+            "electrical"
+        ],
+        "companies": [
+            "cisco",
+            "intel",
+            "ibm"
+        ],
+        "classes": [
+            "224",
+            "330",
+            "380"
+        ],
+        "interests": [
+            "networking",
+            "security"
+        ],
+        "description": "Wireless networking in university classes focuses on the principles and applications of wireless communication technologies. Students learn about network design, security, and management, exploring their use in various fields like telecommunications and computer science. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in network engineering and related areas by emphasizing connectivity, data transmission, and wireless infrastructure.",
+        "imageUrl": "assets/90-3.jpeg"
+    },
+    {
+        "title": "Network Security",
+        "majors": [
+            "computer",
+            "cybersecurity"
+        ],
+        "companies": [
+            "ibm",
+            "google",
+            "microsoft"
+        ],
+        "classes": [
+            "224"
+        ],
+        "interests": [
+            "security",
+            "automation"
+        ],
+        "description": "Network security in university classes centers on protecting computer networks from cyber threats. Students learn about encryption, firewalls, intrusion detection, and security protocols, exploring their application in various fields like cybersecurity and information technology. The curriculum includes practical projects and labs, offering hands-on experience and preparing students for careers in network security and related areas by emphasizing threat detection, risk management, and data protection strategies.",
+        "imageUrl": "assets/90-4.jpeg"
+    },
+    {
+        "title": "High Performance Computing",
+        "majors": [
+            "computer"
+        ],
+        "companies": [
+            "nvidia",
+            "intel",
+            "google",
+            "ibm"
+        ],
+        "classes": [
+            "224",
+            "330"
+        ],
+        "interests": [
+            "systems",
+            "design"
+        ],
+        "description": "High-performance computing (HPC) in university classes focuses on using powerful computer systems to solve complex problems. Students learn about parallel computing, algorithms, and system architecture, exploring their applications in fields like science, engineering, and data analysis. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in HPC and related areas by emphasizing computational efficiency, large-scale data processing, and advanced problem-solving techniques.",
+        "imageUrl": "assets/90-5.jpeg"
+    },
+    {
+        "title": "Robotics",
+        "majors": [
+            "computer",
+            "electrical"
+        ],
+        "companies": [
+            "tesla",
+            "spacex",
+            "boston-dynamics"
+        ],
+        "classes": [
+            "240"
+        ],
+        "interests": [
+            "robotics",
+            "automation"
+        ],
+        "description": "Robotics in university classes focuses on the design, construction, and programming of robots. Students learn about control systems, artificial intelligence, and sensor integration, exploring their applications in fields like manufacturing, healthcare, and automation. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in robotics and related areas by emphasizing innovation, problem-solving, and the integration of hardware and software.",
+        "imageUrl": "assets/90-6.jpeg"
+    },
+    {
+        "title": "Robotic Vision/Self-Driving Cars",
+        "majors": [
+            "computer"
+        ],
+        "companies": [
+            "tesla",
+            "google",
+            "apple",
+            "nvidia"
+        ],
+        "classes": [
+            "224",
+            "330"
+        ],
+        "interests": [
+            "ai",
+            "design"
+        ],
+        "description": "Robotic vision and self-driving cars in university classes focus on the technologies enabling autonomous vehicles to perceive and navigate the environment. Students learn about computer vision, sensor fusion, machine learning, and control systems, exploring their applications in the automotive and robotics industries. The curriculum includes hands-on projects and labs, offering practical experience and preparing students for careers in autonomous systems and related areas by emphasizing innovation, real-time data processing, and the integration of perception and decision-making algorithms.",
+        "imageUrl": "assets/90-7.jpeg"
+    },
+    {
+        "title": "Machine Learning/AI",
+        "majors": [
+            "computer"
+        ],
+        "companies": [
+            "google",
+            "ibm",
+            "nvidia",
+            "meta"
+        ],
+        "classes": [],
+        "interests": [
+            "ai",
+            "programming"
+        ],
+        "description": "Machine learning and AI in university classes focus on developing algorithms and models that enable computers to learn and make decisions. Students learn about data analysis, neural networks, and natural language processing, exploring their applications in various fields like healthcare, finance, and robotics. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in AI and related areas by emphasizing data-driven problem-solving, model development, and the ethical implications of AI technologies.",
+        "imageUrl": "assets/90-8.jpeg"
+    },
+    {
+        "title": "FPGA Design",
+        "majors": [
+            "computer"
+        ],
+        "companies": [],
+        "classes": [
+            "320"
+        ],
+        "interests": [
+            "hardware",
+            "design"
+        ],
+        "description": "FPGA design involves creating and implementing hardware systems using a Field-Programmable Gate Array (FPGA), which is a programmable logic device with reconfigurable gate array circuits. Designers typically use hardware description languages (HDLs) like Verilog or VHDL to model the behavior of the design and simulate it before generating a programming file for the FPGA. Unlike processors, FPGAs process logic on dedicated hardware without an operating system.",
+        "imageUrl": "assets/90-9.jpeg"
+    },
+    {
+        "title": "ASIC Design",
+        "majors": [
+            "computer"
+        ],
+        "companies": [],
+        "classes": [],
+        "interests": [
+            "hardware",
+            "design"
+        ],
+        "description": "ASIC design is a methodology that aims to reduce the cost and size of an electronic circuit, product, or system by integrating individual components and their functionality into a single element—an Application Specific Integrated Circuit (ASIC). Unlike general-purpose integrated circuits (ICs), which consist of interconnected components, ASICs are custom-designed for specific functions, resulting in smaller size, improved reliability, and cost savings. Modern ASICs often combine analog and digital elements, forming system-on-chip (SoC) designs.",
+        "imageUrl": "assets/90-10.jpeg"
+    },
+    {
+        "title": "Computer System Reliability",
+        "majors": [
+            "computer"
+        ],
+        "companies": [],
+        "classes": [],
+        "interests": [
+            "systems",
+            "security"
+        ],
+        "description": "Computer system reliability in university classes focuses on ensuring that computer systems operate consistently and correctly. Students learn about fault tolerance, error detection, and system recovery, exploring their applications in fields like aerospace, finance, and healthcare. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in system reliability and related areas by emphasizing robustness, dependability, and strategies to prevent and mitigate system failures.",
+        "imageUrl": "assets/90-11.jpeg"
+    },
+    {
+        "title": "Electric Vehicles",
+        "majors": [
+            "electrical"
+        ],
+        "companies": [],
+        "classes": [
+            "240",
+            "340"
+        ],
+        "interests": [
+            "Fault Tolerance",
+            "System Recovery",
+            "Robustness"
+        ],
+        "description": "Electric vehicles in university classes focus on the design, development, and technology behind battery-powered transportation. Students learn about electric drivetrains, battery management systems, and sustainable energy integration, exploring their applications in the automotive industry and beyond. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in electric vehicle engineering by emphasizing innovation, sustainability, and the future of clean transportation.",
+        "imageUrl": "assets/90-2.jpeg"
+    },
+    {
+        "title": "Secure and/or Digital Communications",
+        "majors": [
+            "electrical"
+        ],
+        "companies": [],
+        "classes": [
+            "380"
+        ],
+        "interests": [
+            "Fault Tolerance",
+            "System Recovery",
+            "Robustness"
+        ],
+        "description": "Secure and digital communications in university classes focus on the principles and technologies that protect and transmit information over digital networks. Students learn about encryption, cryptography, network security, and communication protocols, exploring their applications in areas like cybersecurity, telecommunications, and finance. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in secure communications by emphasizing data protection, privacy, and the development of robust communication systems.",
+        "imageUrl": "assets/90-12.jpeg"
+    },
+    {
+        "title": "Biomedical Engineering",
+        "majors": [
+            "computer",
+            "electrical"
+        ],
+        "companies": [],
+        "classes": [],
+        "interests": [
+            "Fault Tolerance",
+            "System Recovery",
+            "Robustness"
+        ],
+        "description": "Biomedical engineering in university classes focuses on applying engineering principles to healthcare and medical technologies. Students learn about medical device design, biomaterials, and tissue engineering, exploring their applications in areas like diagnostics, prosthetics, and rehabilitation. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in biomedical engineering by emphasizing innovation, patient care, and the development of cutting-edge medical solutions.",
+        "imageUrl": "assets/90-13.jpeg"
+    },
+    {
+        "title": "Aerial Robotics",
+        "majors": [
+            "electrical"
+        ],
+        "companies": [],
+        "classes": [
+            "240"
+        ],
+        "interests": [
+            "Fault Tolerance",
+            "System Recovery",
+            "Robustness"
+        ],
+        "description": "Aerial robotics in university classes focuses on the design and operation of drones and other flying robots. Students learn about aerodynamics, control systems, and autonomous navigation, exploring their applications in fields like agriculture, surveillance, and disaster response. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in aerial robotics by emphasizing innovation, real-time problem-solving, and the integration of hardware and software for flight control and automation.",
+        "imageUrl": "assets/90-14.jpeg"
+    },
+    {
+        "title": "Circuits",
+        "majors": [
+            "electrical"
+        ],
+        "companies": [],
+        "classes": [
+            "240",
+            "340"
+        ],
+        "interests": [
+            "Fault Tolerance",
+            "System Recovery",
+            "Robustness"
+        ],
+        "description": "Circuits in university classes focus on the design and analysis of electrical circuits and systems. Students learn about circuit components, network analysis, and electronic devices, exploring their applications in various fields like consumer electronics, telecommunications, and power systems. The curriculum includes hands-on projects and labs, providing practical experience and preparing students for careers in circuit design and engineering by emphasizing problem-solving, innovation, and the creation of efficient and reliable electronic systems.",
+        "imageUrl": "assets/90-15.jpeg"
+    }
+]
